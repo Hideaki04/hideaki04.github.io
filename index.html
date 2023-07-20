@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Hideaki MATSUI">
+    <!-- ページを内容を表すキーワード（３～５くらい） -->
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <!-- cssとの紐づけ. cssへのパスは相対パスで記述する. -->
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+
+    <title>第12回 JavaScript(ジャンケンプログラム)</title>
+</head>
+<body>
+    <header >
+        <h1 id="top">コンピュータ・リテラシーⅡ</h1>
+        <!-- サブタイトル -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">タグリファレンス</a></li>
+                <li><a href="#">問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>JavaScript（じゃんけんプログラム）</h2>
+        
+        <div>
+            <h3>課題解説：じゃんけんプログラム</h3>
+            <button type="button" onclick="janken(0)">グー</button>
+            <button type="button" onclick="janken(1)">チョキ</button>
+            <button type="button" onclick="janken(2)">パー</button>
+            <div>
+                <p id="janken-result">ここに勝ち負けが表示されます.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 外部のJavaScriptファイルを読み込む場合-->
+    <script src="./js/janken.js"></script>
+
+    <!-- JavaScriptは、Bodyの閉じタグの直前に記述するのがセオリー -->
+    <!-- ↑の理由、ページの読み込み速度を向上させるため -->
+</body>      
