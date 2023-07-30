@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Hideaki MATSUI">
+    <!-- ページを内容を表すキーワード（３～５くらい） -->
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <!-- cssとの紐づけ. cssへのパスは相対パスで記述する. -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>我が家のペット紹介！</title>
+</head>
+<body>
+    <header>
+       <h1 id="top">愛犬の食べているご飯とおもちゃ紹介！</h1>
+    </header>
+    <main>
+        <div class="agenda"> 
+            <h2>Contents（目次）</h2>
+            <ul>
+                <li><a href="#Pet_food">愛犬の食べているご飯紹介</a></li>
+                <li><a href="#Pet_goods">愛犬の使っているおもちゃ紹介</a></li>
+                <li><a href="#Pet_game">おすすめの犬種診断</a></li>
+            </ul>
+        </div> 
+        <div>
+            <h2 id="Pet_food" class="brawn">【愛犬の食べているご飯紹介】</h2>
+            <dl>
+                <dt>よしが普段食べているご飯は、、、</dt>
+                <dd>よしくんが普段食べている夜ご飯は、下の缶詰の４種類です↓↓</dd>
+            </dl>
+            <figure><img src="media/S__8929284.jpg" alt="愛犬ごはん" width="600" height="460"></figure>
+            よしは1日2食で朝と夜にご飯🍚をあげています。
+            <br>曜日によってあげる缶詰の種類はもちろん変えてますよ！！
+            <p>よしくんの朝ごはん↓</p>
+            <figure><img src="media/S__8929282.jpg" alt="愛犬ごはん" width="600" height="460"></figure>
+            よしくんは特にレバーが好きで朝はすぐにご飯をたいらげてしまいます(笑)
+        </div>
+        <div>
+            <h2 id="Pet_goods" class="brawn">【愛犬の使っているおもちゃ紹介】</h2>
+            <dl>
+                <dt>よしが普段遊んでいるおもちゃは、、、</dt>
+                <dd>お肉の形をしたおもちゃとマスコット呪術廻戦の五条悟の人形です！</dd>
+            </dl>
+            <figure><img src="media/S__8912905.jpg" alt="愛犬ペット画像" width="600" height="460"></figure>
+            お肉のおもちゃを加えたよしくんは超絶似合っててかわいいです💖
+            <p>くわえている様子↓↓</p>
+            <figure><img src="media/meet.jpg" alt="愛犬ペットお肉画像" width="400" height="450"></figure>
+        </div>
+        <div>
+            <h2 id="Pet_game" class="brawn">【おすすめの犬種診断🐶】</h2>
+            <dl>
+                <dt>＜ルール説明＞</dt>
+                <dd>今から出る質問にでえらんでいただき解答に応じておすすめの犬種を紹介します！！</dd>
+            </dl>
+            <p>Q1:あなたはどんな犬がタイプですか？</p>
+            <button type="button" onclick="select1(0)">大型犬でおとなしい</button>
+            <button type="button" onclick="select1(1)">大型犬で活発</button>
+            <button type="button" onclick="select1(2)">子型犬でおとなしい</button>
+            <button type="button" onclick="select1(3)">子型犬で活発</button>
+            <p >あなたにおすすめの犬種はこちら↓</p>
+            <p id="Pet-result"></p>
+        </div>
+    </main>
+    <aside>
+        <a href="../FinalKadai/Pet1.html"><p>我が家のペット紹介ページはこちら</p></a>
+    </aside>
+    <a href="#top"><p>トップに戻る</p></a>
+    <footer>
+        Pet things &copy;Hideaki MATSUI
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
