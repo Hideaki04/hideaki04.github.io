@@ -5,28 +5,30 @@
 .darkblue {
     color:darkblue;
 }
-.brawn{
-    color:brown;
+.blue{
+    color: blue;
+    font-size: 1.2rem;
 }
-.agenda {
-    background-color: azure;
+.black {
+    font-size: 1.5rem;
 }
-.container{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+.green {
+    color:green;
+    font-size: 1.2rem;
 }
-.like{
-    order: 0;
-    flex: 0 1 500px;
+.subTitle {
+    background-color: antiquewhite;
 }
-.dislike{
-    order: 1;
-    flex: 1 0 500px;
+th
+{
+    border:1px solid gainsboro;
+}
+.Impact{
+    background-color: paleturquoise;
 }
 a:hover
 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 a:link{
     color: darkblue;
@@ -34,3 +36,103 @@ a:link{
 a:visited{
     color: purple;
 }
+.agenda {
+    background-color: whitesmoke;
+    font-size: 1.0rem;
+}
+.center {
+    text-align:center ;
+}
+/* -------------------- */
+/* ▼メニューバーの装飾 */
+/* -------------------- */
+ul.ddmenu {
+    margin: 0px;               /* メニューバー外側の余白(ゼロ) */
+    padding: 0px 0px 0px 15px; /* メニューバー内側の余白(左に15px) */
+    background-color:skyblue; /* バーの背景色(濃い赤色) */
+ }
+ 
+ /* -------------------------- */
+ /* ▼メインメニュー項目の装飾 */
+ /* -------------------------- */
+ ul.ddmenu li {
+    width: 150px;           /* メニュー項目の横幅(125px) */
+    display: inline-block;  /* ★1:横並びに配置する */
+    list-style-type: none;  /* ★2:リストの先頭記号を消す */
+    position: relative;     /* ★3:サブメニュー表示の基準位置にする */
+ }
+ ul.ddmenu a {
+    background-color: skyblue; /* メニュー項目の背景色(濃い赤色) */
+    color: white;              /* メニュー項目の文字色(白色) */
+    line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+    text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
+    text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+    font-weight: bold;         /* 太字にする */
+    display: block;            /* ★4:項目内全域をリンク可能にする */
+ }
+ ul.ddmenu a:hover {
+    background-color: gainsboro; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+    color: rgb(67, 67, 247);            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+ }
+ 
+ /* ▼サブメニューは、とりあえず非表示にしておく */
+ ul.ddmenu ul {
+    display: none;         /* ★5:非表示にする */
+ }
+ /* -------------------- */
+/* ▼サブメニューの装飾 */
+/* -------------------- */
+ul.ddmenu ul {
+   display: none;       /* ★1:標準では非表示にする */
+   margin: 0px;         /* ★2:サブメニュー外側の余白(ゼロ) */
+   padding: 0px;        /* ★3:サブメニュー内側の余白(ゼロ) */
+   position: absolute;  /* ★4:絶対配置にする */
+}
+
+/* ---------------------------------- */
+/* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+/* ---------------------------------- */
+ul.ddmenu li:hover ul {
+   display: block;      /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+}
+/* ------------------------ */
+/* ▼サブメニュー項目の装飾 */
+/* ------------------------ */
+ul.ddmenu ul li {   /* ※A */
+    width: 135px;               /* サブメニュー1項目の横幅(135px) */
+    border-top: 1px solid white; /* 項目上側の枠線(ピンク色で1pxの実線) */
+ }
+ ul.ddmenu ul li a {   /* ※B */
+    line-height: 35px;   /* サブメニュー1項目の高さ(35px) */
+    text-align: left;    /* 文字列の配置(左寄せ) */
+    padding-left: 5px;   /* 文字列前方の余白(5px) */
+    font-weight: normal; /* 太字にはしない */
+ }
+ ul.ddmenu ul li a:hover {   /* ※C */
+    background-color: gainsboro; /* サブメニュー項目にマウスが載ったときの背景色(淡い黄色) */
+    color: blue;            /* サブメニュー項目にマウスが載ったときの文字色(濃い緑色) */
+ }
+ /* サイトのレイアウト変更 */
+ .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-contents {
+    width: 60%;
+    padding: 10px;
+    background-color:whitesmoke;
+  }
+  .left-menu
+  {
+    width: 10%;
+    padding: 10px;
+    background-color:gainsboro;
+  }
+  .right-menu {
+    width: 30%;
+    padding: 10px;
+    background-color:gainsboro;
+  }
+
