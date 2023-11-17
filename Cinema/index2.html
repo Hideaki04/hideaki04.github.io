@@ -12,6 +12,8 @@
     <meta name="auther" content="Hideaki MATSUI">
     <!-- ページを内容を表すキーワード（３～５くらい） -->
     <meta name="keywords" content="HTML,CSS,Javascript">
+    <!-- スマホサイズに対応 -->
+    <meta name="viewport" content="width=device-width">
     <!-- cssとの紐づけ. cssへのパスは相対パスで記述する. -->
     <link rel="stylesheet" href="./css/main2.css">
     <title>WISH</title>
@@ -26,10 +28,10 @@
         </div>
         <div class ="mainContents">
             <div class ="visual">
-                <video id="video" webkit-playsinline playsinline muted autoplay loop>
+                <video id="video" webkit-playsinline playsinline muted autoplay loop >
                 <source src="./video/BackVideo.mp4" type="video/mp4">
                 </video>
-                <h2><img src="./media/Title2.png" alt="タイトルロゴ" width="350" height="150" ></h2>
+                <h2><img src="./media/Title2.png" alt="タイトルロゴ" width="260" height="120" ></h2>
             </div>
             <div class="White">
                 <div class="sentence">
@@ -42,9 +44,11 @@
                     <input type="text" name="test" id="test" required>
                     <button class="btn">OK</button>
                 </form>
-                <div class="parent">
-                    <p class="text"><a href="./index.html">前に戻る</a></p>
-                </div>
+                <form action="./index.html">
+                    <div class="parent">
+                        <button class="btn3">BACK</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="right-menu">

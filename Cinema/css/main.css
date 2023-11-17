@@ -1,5 +1,5 @@
 @charset "utf-8"; /* 文字コード*/
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 /* *はワイルドカード. 全てのタグに適用される */
 *{
     font-family: "Hiragino kaku Gothic ProN","ヒラギノ角ゴ proN",Meiryo,"メイリオ";
@@ -10,54 +10,33 @@ a:link{
 .White{
     color: white;
 }
-.visual{
-    width:100%;
-    height:500px;
-    position:relative;
-    z-index: -1;
-    background-size:cover;
+h2{
     text-align: center;
-  }
-  #video {
-     width:100%;
-     overflow:hidden;
-     display: flex;
-     position: center;
-     z-index:-1;
-  }
+    font-size:7rem;
+    color:rgb(233, 231, 218);
+    text-shadow: 0px 0px 10px #3d3d3d;
+    font-family: 'Ubuntu Mono', monospace;
+} 
+@media screen and (max-width: 480px) {
+
   h2{
     text-align: center;
-    width:100%;
-    top: 400px;
     font-size:6rem;
     color:rgb(233, 231, 218);
     text-shadow: 0px 0px 10px #3d3d3d;
-  }
-  
+} 
+}
    /* サイトのレイアウト変更 */
- .container {
+.container {
     width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
   }
-  .main-contents {
+.main-contents {
     width: 100%;
-    padding: 10px;
-    background-color:black;
   }
-  .left-menu
-  {
-    width: 0%;
-    padding: 10px;
-    background-color:black;
-  }
-  .right-menu {
-    width: 0%;
-    padding: 10px;
-    background-color:black;
-  }
-  body {
+body {
     background-color: black;
   }
 .sentence {
