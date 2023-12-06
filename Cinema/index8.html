@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ページ作成者 -->
     <meta name="auther" content="Hideaki MATSUI">
     <!-- ページを内容を表すキーワード（３～５くらい） -->
@@ -16,6 +15,11 @@
     <!-- cssとの紐づけ. cssへのパスは相対パスで記述する. -->
     <link rel="stylesheet" href="./css/main3.css">
     <title>WISH</title>
+    <style>
+        .hidden {
+          display: none;
+        }
+    </style>
 </head>
 <body>
     <header id="top">
@@ -32,23 +36,35 @@
                 </video>
                 <h2><img src="./media/Title2.png" alt="タイトルロゴ" width="260" height="120" ></h2>
             </div>
+
             <div class="White">
-                <h3>これが過去に戻るラストチャンスです。条件付きで過去を一度だけ変えることが出来ますが、変えますか？</h3>
-                <div class="sentence">
+                <div class="sentence2">
+                    <h3>以下の欄に戻りたい日を
+                    <br>入力してください。</h3>
                 </div>
-                <div>
-                    <form action="./index2.html">
+                <input type="text" name="test" id="test" required>
+                <button class="btn4"  id="button">OK</button>
+                <div id="message" class="hidden" >
+                    <p>　</p>
+                   <h1>
+                    2017年12月25日
+                    <br>に戻りますか？</h1> 
+                    <form action="./index5.html">
                         <button class="btn">はい</button>
                     </form>
-                    <form action="./index.html">
+                    <form action="./index8.html">
                         <button class="btn2">いいえ</button>
                     </form>
+                    <p>　</p>
                 </div>
-                <!-- <form action="./index.html">
-                    <div class="parent">
-                        <button class="btn3">BACK</button>
-                    </div>
-                </form> -->
+
+                <script>
+                    const button = document.getElementById("button");
+                    const message = document.getElementById("message");
+                    button.addEventListener("click", () => {
+                      message.classList.toggle("hidden");
+                    });
+                  </script>
             </div>
         </div>
         <div class="right-menu">
@@ -56,7 +72,4 @@
     </div>
 </body>
 </html>
-<!-- <body>
-    
-</body> -->
 </html>

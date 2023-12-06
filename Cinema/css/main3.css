@@ -74,11 +74,14 @@ a:link{
 .sentence {
     font-size: 2rem;
 }
-/* input[type="text"]
+.sentence2 {
+  font-size: 1.5rem;
+}
+input[type="text"]
 {
    width: 90%;
    padding: 10px;
-} */
+}
 button
 {
     width: 30%;
@@ -96,6 +99,7 @@ button
     transform: translate(-90px,70px);
     text-shadow: 0 0 15px #666;
 }
+
 .btn2 {
     display: block; 
     margin: 10px  auto;
@@ -111,4 +115,11 @@ button
   position: absolute;
   bottom: 0;
   font-family: 'Ubuntu Mono', monospace;
+}
+.btn4 {
+  display: block; 
+  margin: 10px auto;
+  font-size: 2rem; 
+  width: 30%;transform: translate(-10px,30px);
+  text-shadow: 0 0 15px #666;
 }
